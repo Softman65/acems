@@ -24,7 +24,7 @@ $(document).ready(function() {
                 
                 $('.acems .ui.sidebar')
                 .sidebar({
-                    context: $('.acems .bottom.segment')
+                    context: $('.acems')
                 })
                 .sidebar('attach events', '.acems .menu .item')          
             } 

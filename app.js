@@ -1,6 +1,6 @@
 'use strict';
 
-console.log(process.env.MYSQLPSS);
+//console.log(process.env.MYSQLPSS);
 
 
 //var fs = require('fs');
