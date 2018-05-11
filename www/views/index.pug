@@ -21,7 +21,7 @@ body
         a.item.active(data="inicio") Inicio 
         a.item(data="directorio") Asociados 
         a.item(data="map") Mapa 
-        .right.menu
+        .item.right.menu
             .item(data="buscar")
                 .ui.transparent.icon.input
                     input(type='text', placeholder='Buscar...')
@@ -32,13 +32,13 @@ body
             a.item
                 
                 |  Inicio
-            a.item
+            a.item(data="asociados")
                 
                 |  Asociados
             a.item(data="map")
                 
                 |  Mapa
-            a.item(data="history")
+            a.item
                 
                 |  History
         .pusher

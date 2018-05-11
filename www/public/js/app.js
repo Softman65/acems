@@ -5,7 +5,7 @@ $(document).ready(function() {
         url: "/api/asociados" 
     }).done(function( data ) {
         
-        alert('asociados')
+        //alert('asociados')
 
 
         $('.ui.pointing.menu a.item').click(function(){
