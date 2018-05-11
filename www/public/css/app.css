@@ -1,0 +1,26 @@
+.ui-jqgrid-view {
+    max-height: 642px!important;;
+}
+.ui-jqgrid-bdiv {
+    overflow-y: scroll !important;
+    max-height: 600px !important;
+}
+.blue{
+    color:blue!important;
+}
+.red{
+    color:red!important;
+}
+.green{
+    color:green!important;
+}
+.right{
+    float:right!important;
+}
+.left{
+    float:left!important;;
+}
+
+.hidden{
+    display:none
+}

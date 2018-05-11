@@ -1,0 +1,8 @@
+.full{
+    height:calc(100% - 40px)!important;
+}
+
+
+.hidden{
+    display:none !important;
+}

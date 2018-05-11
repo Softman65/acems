@@ -1,0 +1,21 @@
+{
+  "name": "program_db",
+  "version": "0.0.0",
+  "description": "program_db",
+  "main": "app.js",
+  "author": {
+    "name": "Ricardo"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cookie-parser": "^1.4.0",
+    "encoding": "^0.1.12",
+    "express": "^4.14.0",
+    "lodash": "^4.17.5",
+    "mysql": "^2.15.0",
+    "pug": "^2.0.0-beta6",
+    "read-xml": "^3.0.0",
+    "xml": "^1.0.1",
+    "xml2json": "^0.11.2"
+  }
+}
