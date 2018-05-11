@@ -22,7 +22,7 @@ $(document).ready(function() {
             if($(this).attr("data")=="directorio"){
                 $('.ui.basic.segment .ui.basic.segment.directorio').removeClass('hidden')
                 
-                $('.context.acems .ui.sidebar')
+                $('.acems .ui.sidebar')
                 .sidebar({
                     context: $('.context.acems .bottom.segment')
                 })
