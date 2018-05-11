@@ -24,9 +24,9 @@ $(document).ready(function() {
                 
                 $('.acems .ui.sidebar')
                 .sidebar({
-                    context: $('.context.acems .bottom.segment')
+                    context: $('.acems .bottom.segment')
                 })
-                .sidebar('attach events', '.context.acems .menu .item')          
+                .sidebar('attach events', '.acems .menu .item')          
             } 
 
             if($(this).attr("data")=="map"){
