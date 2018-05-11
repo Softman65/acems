@@ -43,7 +43,7 @@ router.get('/', function (req, res) {
 });
 router.get('/api/asociados', function (req, res) {
     mysql.connection.query('SELECT * FROM _asociados',function(err,records){
-        res.json({err:err,records:records});
+        res.json({MYSQLPSS:process.env.MYSQLPSS,err:err,records:records});
     })
 });
 
@@ -51,3 +51,6 @@ router.get('/api/asociados', function (req, res) {
 
 
 module.exports = router;
+
+
+
