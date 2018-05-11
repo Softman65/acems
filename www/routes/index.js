@@ -42,7 +42,7 @@ router.get('/', function (req, res) {
     res.render('index', { title: 'Asociación de Comerciantes De Miraflores de la Sierra' });
 });
 router.get('/api/asociados', function (req, res) {
-    mysql.connection.query('SELECT * FROM _asociados',function(err,records){
+    mysql.connection.query('SELECT * FROM view_asociados_light',function(err,records){
         res.json({MYSQLPSS:process.env.MYSQLPSS,err:err,records:records});
     })
 });

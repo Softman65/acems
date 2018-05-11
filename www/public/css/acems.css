@@ -6,3 +6,7 @@
 .hidden{
     display:none !important;
 }
+
+.ui.left.sidebar{
+    width: 240px !important;
+}

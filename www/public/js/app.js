@@ -14,23 +14,25 @@ $(document).ready(function() {
             $(this).addClass('active')
             $('.ui.basic.segment .ui.basic.segment').addClass('hidden')
 
+
             if($(this).attr("data")=="inicio"){
-            
                 $('.ui.basic.segment .ui.basic.segment.inicio').removeClass('hidden')
+                $('.context.example .ui.sidebar').removeClass('visible')
             } 
 
             if($(this).attr("data")=="directorio"){
                 $('.ui.basic.segment .ui.basic.segment.directorio').removeClass('hidden')
-                
-                $('.acems .ui.sidebar')
-                .sidebar({
-                    context: $('.acems')
-                })
-                .sidebar('attach events', '.acems .menu .item')          
+                if($('.context.example .ui.sidebar').hasClass('visible')){
+                    $('.context.example .ui.sidebar').removeClass('visible')
+                }else{
+                    $('.context.example .ui.sidebar').addClass('visible')
+                }
+              ;         
             } 
 
             if($(this).attr("data")=="map"){
                 $('.ui.basic.segment .ui.basic.segment.map').removeClass('hidden')
+                $('.context.example .ui.sidebar').removeClass('visible')
             } 
         
         })

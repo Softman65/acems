@@ -16,41 +16,76 @@ html
 
 
 body
-.ui.segment.context.full
-    .ui.pointing.menu
-        a.item.active(data="inicio") Inicio 
-        a.item(data="directorio") Asociados 
-        a.item(data="map") Mapa 
-        .item.right.menu
-            .item(data="buscar")
-                .ui.transparent.icon.input
-                    input(type='text', placeholder='Buscar...')
-                    i.search.link.icon
+.context.example.full
+  .ui.segment.full
+      .ui.pointing.menu
+          a.item.active(data="inicio") Inicio 
+          a.item.directorio(data="directorio") Asociados 
+          a.item(data="map") Mapa 
+          .item.right.menu
+              .item(data="buscar")
+                  .ui.transparent.icon.input
+                      input(type='text', placeholder='Buscar...')
+                      i.search.link.icon
+      .ui.bottom.attached.segment.pushable
+          .ui.inverted.labeled.icon.left.inline.vertical.sidebar(style='')
+            .ui.vertical.accordion.menu
+              .item
+                a.active.title
+                  i.dropdown.icon
+                  |  Tamaño
+                .active.content
+                  .ui.form
+                    .grouped.fields
+                      .field
+                        .ui.radio.checkbox
+                          input(type='radio', name='size', value='small')
+                          label Pequeño
+                      .field
+                        .ui.radio.checkbox
+                          input(type='radio', name='size', value='medium')
+                          label Mediano
+                      .field
+                        .ui.radio.checkbox
+                          input(type='radio', name='size', value='large')
+                          label Grande
+                      .field
+                        .ui.radio.checkbox
+                          input(type='radio', name='size', value='x-large')
+                          label Extra grande
+              .item
+                a.title
+                  i.dropdown.icon
+                  |  Colores
+                .content
+                  .ui.form
+                    .grouped.fields
+                      .field
+                        .ui.checkbox
+                          input(type='checkbox', name='small')
+                          label Rojo
+                      .field
+                        .ui.checkbox
+                          input(type='checkbox', name='medium')
+                          label Naranja
+                      .field
+                        .ui.checkbox
+                          input(type='checkbox', name='large')
+                          label Verde
+                      .field
+                        .ui.checkbox
+                          input(type='checkbox', name='x-large')
+                          label Azul
+          .pusher
+              .ui.basic.segment
+                  .ui.basic.segment.inicio
+                      h3.ui.header Inicio
 
-    .ui.bottom.attached.segment.pushable.acems
-        .ui.inverted.labeled.icon.left.inline.vertical.sidebar.menu(style='')
-            a.item
-                
-                |  Inicio
-            a.item(data="asociados")
-                
-                |  Asociados
-            a.item(data="map")
-                
-                |  Mapa
-            a.item
-                
-                |  History
-        .pusher
-            .ui.basic.segment
-                .ui.basic.segment.inicio
-                    h3.ui.header Inicio
+                  .ui.basic.segment.directorio.hidden
+                      h3.ui.header Directorio
 
-                .ui.basic.segment.directorio.hidden
-                    h3.ui.header Directorio
+                  .ui.basic.segment.map.hidden
+                      h3.ui.header google maps
 
-                .ui.basic.segment.map.hidden
-                    h3.ui.header google maps
-
-                .ui.basic.segment.history.hidden
-                    h3.ui.header History
+                  .ui.basic.segment.history.hidden
+                      h3.ui.header History
