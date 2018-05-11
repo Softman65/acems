@@ -16,20 +16,21 @@ $(document).ready(function() {
 
             if($(this).attr("data")=="inicio"){
             
-            $('.ui.basic.segment .ui.basic.segment.inicio').removeClass('hidden')
+                $('.ui.basic.segment .ui.basic.segment.inicio').removeClass('hidden')
             } 
 
             if($(this).attr("data")=="directorio"){
-            $('.ui.basic.segment .ui.basic.segment.directorio').removeClass('hidden')
-            $('.context.acems .ui.sidebar')
-            .sidebar({
-                context: $('.context.acems .bottom.segment')
-            })
-            .sidebar('attach events', '.context.acems .menu .item')          
+                $('.ui.basic.segment .ui.basic.segment.directorio').removeClass('hidden')
+                
+                $('.context.acems .ui.sidebar')
+                .sidebar({
+                    context: $('.context.acems .bottom.segment')
+                })
+                .sidebar('attach events', '.context.acems .menu .item')          
             } 
 
             if($(this).attr("data")=="map"){
-            $('.ui.basic.segment .ui.basic.segment.map').removeClass('hidden')
+                $('.ui.basic.segment .ui.basic.segment.map').removeClass('hidden')
             } 
         
         })
