@@ -19,8 +19,13 @@ $(document).ready(function() {
             var $input = $('<input type="checkbox"  name="size">')
             var $l = $('<label>')
             const  _item = function(obj, record){
-                return obj.append($fl.clone().append($rc.clone().append($input.clone().val(record.id_area)).append($l.clone().html(record.area))))
-            } 
+                return obj.append($fl.clone().append($rc.clone().append($input.clone().val(record.id_area)).append($l.clone().html(record.area).attr('data', record.id_area).click(function(){
+                    _painter($(this).attr('data'))
+                }))))
+            }
+            const _painter = function(ref){
+
+            }  
             const  _constructor = function(){
                 return _Menu.append($ac.clone().append($uf.clone().append($group)))
             } 
